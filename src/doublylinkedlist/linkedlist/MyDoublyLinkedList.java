@@ -77,7 +77,9 @@ public class MyDoublyLinkedList {
             if(temp.getPrevious() != null){
                 response = temp;
                 temp = temp.getPrevious();
+                response.setPrevious(null);
                 temp.setNext(null);
+
 
             }
             else{
