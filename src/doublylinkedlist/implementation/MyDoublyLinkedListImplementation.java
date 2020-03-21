@@ -28,6 +28,7 @@ public class MyDoublyLinkedListImplementation {
         deleteProcess(linkedList.deleteFromBeginning());
         linkedList.printList();
         deleteProcess(linkedList.deleteFromLast());
+        //deleteProcess(linkedList.deleteFromLast().getPrevious());
         linkedList.printList();
     }
 
