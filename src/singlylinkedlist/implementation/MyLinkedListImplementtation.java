@@ -20,13 +20,17 @@ public class MyLinkedListImplementtation {
         linkedList.printList();
 
         linkedList.insertAtBeginning(5000);
-
+        linkedList.insertAtBeginning(300);
         linkedList.printList();
 
+        System.out.println("Printing Reverse List Using Recursion");
+        linkedList.printReverseList(linkedList.getHead());
+        System.out.println();
         deleteForMe(linkedList.deleteFromBeginning());
         linkedList.printList();
         deleteForMe(linkedList.deleteFromLast());
         linkedList.printList();
+
     }
 
     // iski koi jarurat nahi hai

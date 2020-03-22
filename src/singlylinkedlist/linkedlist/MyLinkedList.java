@@ -86,5 +86,13 @@ public class MyLinkedList {
         }
         return response;
     }
+    //Recursive
+    public void printReverseList(Node temp){
+        if(temp!=null){
+            System.out.print(temp.getData()+"--->");
+            temp=temp.getNext();
+            printReverseList(temp);
+        }
+    }
 
 }
