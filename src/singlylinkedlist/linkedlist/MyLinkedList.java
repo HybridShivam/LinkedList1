@@ -89,9 +89,10 @@ public class MyLinkedList {
     //Recursive
     public void printReverseList(Node temp){
         if(temp!=null){
-            System.out.print(temp.getData()+"--->");
-            temp=temp.getNext();
-            printReverseList(temp);
+            //temp=temp.getNext();
+            printReverseList(temp.getNext());
+            //if(temp!=null)
+            System.out.print(temp.getData()+"    ");
         }
     }
 
